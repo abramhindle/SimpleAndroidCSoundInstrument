@@ -145,7 +145,11 @@ kbutt1    trigger gkbutt1, .5, 0
            ;;   event "i", 1, 0.01, 5, gkfreq
            gkinstr = 1
            kbutt1 = 0
-           gkamp1 = (1 + gkamp1) % 2
+           gkamp1 = 1
+           gkamp2 = 0
+           gkamp3 = 0
+           gkamp4 = 0
+           gkamp5 = 0
         endif
 kbutt2    trigger gkbutt2, .5, 0
         if kbutt2 > 0 then
@@ -153,7 +157,11 @@ kbutt2    trigger gkbutt2, .5, 0
            ;;   event "i", 2, 0.01, 5, gkfreq
            gkinstr = 2
            kbutt2 = 0
-           gkamp2 = (1 + gkamp2) % 2
+           gkamp1 = 0
+           gkamp2 = 1
+           gkamp3 = 0
+           gkamp4 = 0
+           gkamp5 = 0
         endif
 kbutt3    trigger gkbutt3, .5, 0
         if kbutt3 > 0 then
@@ -161,7 +169,11 @@ kbutt3    trigger gkbutt3, .5, 0
            ;;   event "i", 3, 0.01, 5, gkfreq
            gkinstr = 3
            kbutt3 = 0
-           gkamp3 = (1 + gkamp3) % 2
+           gkamp1 = 0
+           gkamp2 = 0
+           gkamp3 = 1
+           gkamp4 = 0
+           gkamp5 = 0
         endif
 kbutt4    trigger gkbutt4, .5, 0
         if kbutt4 > 0 then
@@ -169,7 +181,11 @@ kbutt4    trigger gkbutt4, .5, 0
            ;;   event "i", 4, 0.01, 5, gkfreq
            gkinstr = 4
            kbutt4 = 0
-           gkamp4 = (1 + gkamp4) % 2
+           gkamp1 = 0
+           gkamp2 = 0
+           gkamp3 = 0
+           gkamp4 = 1
+           gkamp5 = 0
         endif
 kbutt5    trigger gkbutt5, .5, 0
         if kbutt5 > 0 then
@@ -177,7 +193,11 @@ kbutt5    trigger gkbutt5, .5, 0
            ;;   event "i", 5, 0.01, 5, gkfreq
            gkinstr = 5
            kbutt5 = 0
-           gkamp5 = (1 + gkamp5) % 2
+           gkamp1 = 0
+           gkamp2 = 0
+           gkamp3 = 0
+           gkamp4 = 0
+           gkamp5 = 1
         endif
 
 endin
